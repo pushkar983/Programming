@@ -1,0 +1,10 @@
+Memoization : Memoization is a technique used in computer science to optimize the performance of functions, especially those that involve recursive calls or repeated computations of the same values. The idea behind memoization is to store the results of expensive function calls and return the cached result when the same inputs occur again.
+
+Here's how memoization typically works:
+
+Check if the result is already cached: Before executing a function with a given set of parameters, the program first checks whether the result for those parameters has already been computed and stored.
+Compute and cache the result if not found: If the result is not found in the cache, the function is executed as usual. However, before returning the result, it is stored in the cache along with the corresponding input parameters.
+Return the cached result when possible: When the function is called again with the same parameters, instead of recomputing the result, the program retrieves the cached result from memory and returns it immediately.
+This technique can significantly improve the performance of functions, especially those that involve heavy computations or repetitive calculations.
+
+In practice, memoization is often implemented using hash tables or associative arrays to store the cached results, with the function parameters used as keys.

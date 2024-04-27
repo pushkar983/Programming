@@ -1,0 +1,10 @@
+In dynamic programming (DP), there are typically two approaches: top-down and bottom-up. While top-down DP uses recursion with memoization, bottom-up DP involves iteratively solving subproblems in a bottom-up manner, usually starting from the smallest subproblem and gradually building up to the larger ones until the final solution is reached.
+
+Here's how the bottom-up approach works:
+
+Identify the subproblems: Break down the main problem into smaller subproblems. These subproblems should have the property that their solutions can be used to solve larger subproblems or the main problem itself.
+Solve the smallest subproblems: Start by solving the smallest subproblems first. These are typically the base cases of your DP solution. The solutions to these base cases are usually known or easily computable.
+Build up solutions iteratively: Once the base cases are solved, iteratively compute the solutions to larger subproblems using the solutions to smaller subproblems. This involves solving subproblems in a bottom-up order, gradually building up to the solution of the main problem.
+Store and reuse intermediate results: As you solve subproblems, store their solutions in an array or table. This allows you to efficiently reuse these solutions when solving larger subproblems, avoiding redundant computations.
+Return the final solution: After solving all subproblems, the final solution to the main problem will be stored in the array or table. Return this solution as the output of your DP algorithm.
+The bottom-up approach is often preferred in DP because it avoids the overhead of function calls and recursion, leading to better performance and reduced risk of stack overflow errors. Additionally, it can be easier to implement in some cases, especially when the dependencies between subproblems are straightforward and there's a clear order in which they should be solved.
